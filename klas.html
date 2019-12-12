@@ -10,32 +10,32 @@
 </head>
 <body>
     <nav class="navbar navbar-expand navbar-light bg-dark sticky-top"> <!--Start navbar-->
-        <div class="container"><!--Start container-->
+        <div class="container"> <!--Start container-->
             <button id="menu-toggle" class="btn btn-info">Login</button> <!--Login button-->
-            <a class="nav-link" href="#" style="color: #ffffff; border-bottom: 2px solid #d8c0fd;">Vista Rankings</a> <!--Home button-->
-            <a class="nav-link" href="klas.html" style="color: #ffffff;">Klas Rankings</a> <!--Klas rankings button-->
+            <a class="nav-link" href="index.html" style="color: #ffffff;">Vista Rankings</a> <!--Home button-->
+            <a class="nav-link" href="#" style="color: #ffffff; border-bottom: 2px solid #d8c0fd;">Klas Rankings</a> <!--Klas rankings button-->
         </div> <!--End container-->
     </nav> <!--End navbar-->
     <div id="wrapper"> <!--Start wrapper-->
         <div id="sidebar-wrapper"> <!--Start sidebar wrapper-->
             <div class="container"> <!--Start container-->
-                <ul class="sidebar-nav"> <!--Start sidebar-->
+                <ul class="sidebar-nav">
                     <li>
-                        <div class="form-group"> <!--Start form-group-->
+                        <div class="form-group"> <!--Start from-group-->
                             <label for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
                                 aria-describedby="emailHelp" placeholder="Enter email">
-                        </div> <!--End form-group-->
+                        </div> <!--End from-group-->
                     </li>
                     <li>
-                        <div class="form-group"> <!--Start form-group-->
+                        <div class="form-group"> <!--Start from-group-->
                             <label for="exampleInputPassword1">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1"
                                 placeholder="Password">
-                        </div> <!--End form-group-->
+                        </div> <!--End from-group-->
                     </li>
                     <li>
-                        <div class="form-group form-check"> <!--Start form-group-->
+                        <div class="form-group form-check"> <!--Start from-group-->
                             <input type="checkbox" class="form-check-input" id="exampleCheck1">
                             <label class="form-check-label" for="exampleCheck1">Stay signed in</label>
                         </div> <!--End from-group-->
@@ -47,18 +47,12 @@
             </div> <!--End container-->
         </div> <!--End sidebar wrapper-->
         <div class="container"> <!--Start container-->
-            <h1 class="display-3">Vista Rankings</h1>
-            <div class="input-group mb-3">
-                <div class="input-group-prepend">
-                    <span class="input-group-text" id="basic-addon1">Search</span>
-                </div>
-                <input id="search" type="text" class="form-control" aria-label="Search" aria-describedby="basic-addon1">
-            </div>
+            <h1 class="display-3">Klas Rankings</h1>
             <table id="sex" class="table table-striped table-bordered table-sm">
                 <thead>
                     <tr>
                         <th scope="col">#</th>
-                        <th scope="col">Name</th>
+                        <th scope="col">Klas</th>
                         <th scope="col">Diamond</th>
                         <th scope="col">Gold</th>
                         <th scope="col">Silver</th>
@@ -69,18 +63,14 @@
                 <tbody id="tableBody">
                 </tbody>
             </table>
-            <div class="d-flex justify-content-end">
-                <button onclick="prev();">
-                    <</button> <button onclick="next();">>
-                </button>
-            </div>
             <br>
         </div>
+    </div>
     <script src="./js/jquery.js"></script>
     <script src="./js/popper.js"></script>
     <script src="./js/bootstrap.js"></script>
     <script src="./js/people.js"></script>
-    <script src="./js/rankings.js"></script>
+    <script src="./js/klas.js"></script>
     <script src="./js/sidebar.js"></script>
 </body>
 </html>
